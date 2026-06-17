@@ -163,13 +163,16 @@ Zalecane jest również aby najpierw w pliku znajdowały się same węzły a nas
 
 # 8. Insturkcja uruchomienia programu
 Aby program działał poprawnie należy najpierw aktywować serwis Neo4J na Dockerze. Można to osiągnąć wpisując w Command Line następujące polecenie:
+
 `docker compose up -d` w folderze projektu.
+
 To wystarczy aby uruchomić Neo4J na portach 7474 (Browser) oraz 7687 (baza danych).
 Następnie należy uruchomić aplikacje znajdującą się w: **projekt_bazy/bin/Debug/net8.0/projekt_bazy.exe**
 
 Należy zaznaczyć, że sama baza jest PUSTA po aktywacji, aby wypełnić ją danymi należy użyć jednego z plików .jsonl w folderze projektu (proponuje użycie sos.jsonl, z uwagi na jego złożoność - drugi został dodany jedynie dla wizualizacji w Neo4J Browserze). Sposób na dodanie nowych miast do bazy został omówiony w sekcji 6.
 
 Aby zakończyć działanie bazy danych należy w folderze projektu użyć:
+
 `docker compose down`
 
 # 9. Źródła
