@@ -1,0 +1,66 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:agc="clr-namespace:AvaloniaGraphControl;assembly=AvaloniaGraphControl"
+			 xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+             x:Class="projekt_bazy.Views.GraphVisualizerView">
+
+	<Grid RowDefinitions="Auto,*"
+          Margin="16">
+
+		<StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    Spacing="8">
+
+			<Button Content="Powrót"
+                    Click="BackButton_Click" />
+
+			<Button Content="Odśwież"
+                    Click="RefreshButton_Click" />
+
+			<TextBox x:Name="LimitTextBox"
+                    Text="25"
+                    Width="60" />
+
+			<TextBlock x:Name="TitleTextBlock"
+                       VerticalAlignment="Center"
+                       FontSize="16" />
+		</StackPanel>
+
+		<Border Grid.Row="1"
+                Margin="0,12,0,0"
+                BorderBrush="Gray"
+                BorderThickness="1"
+                Background="White">
+
+			<ScrollViewer HorizontalScrollBarVisibility="Auto"
+                          VerticalScrollBarVisibility="Auto">
+
+
+
+				<agc:GraphPanel x:Name="GraphPanel"
+                                Background="White"
+                                LayoutMethod="SugiyamaScheme"
+								MinWidth="200"
+		                        MinHeight="120">
+
+					<agc:GraphPanel.DataTemplates>
+						<DataTemplate DataType="sys:String">
+							<TextBlock Text="{Binding}"
+									   Foreground="Black"
+									   Background="Transparent"
+									   FontSize="12"
+									   Padding="2" />
+						</DataTemplate>
+
+						<DataTemplate DataType="agc:Edge">
+							<agc:Connection />
+						</DataTemplate>
+					</agc:GraphPanel.DataTemplates>
+				</agc:GraphPanel>
+
+			</ScrollViewer>
+
+		</Border>
+
+	</Grid>
+</UserControl>

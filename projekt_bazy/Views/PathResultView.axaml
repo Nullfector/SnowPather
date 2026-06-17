@@ -1,0 +1,52 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="projekt_bazy.Views.PathResultView">
+
+	<Grid RowDefinitions="Auto,*"
+          Margin="24">
+
+		<StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    Spacing="8">
+
+			<Button Content="Powrót"
+                    Width="180"
+                    Click="BackButton_Click" />
+
+			<TextBlock x:Name="TitleTextBlock"
+                       VerticalAlignment="Center"
+                       FontSize="20" />
+		</StackPanel>
+
+		<Border Grid.Row="1"
+                Margin="0,24,0,0"
+                BorderBrush="Gray"
+                BorderThickness="1"
+                CornerRadius="8"
+                Padding="16">
+
+			<ScrollViewer VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Disabled">
+
+				<ItemsControl x:Name="ResultItemsControl"
+                              HorizontalAlignment="Stretch">
+
+					<ItemsControl.ItemTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding}"
+                                       FontSize="18"
+                                       TextAlignment="Center"
+                                       HorizontalAlignment="Stretch"
+                                       Margin="0,6"
+                                       TextWrapping="Wrap" />
+						</DataTemplate>
+					</ItemsControl.ItemTemplate>
+
+				</ItemsControl>
+
+			</ScrollViewer>
+
+		</Border>
+
+	</Grid>
+</UserControl>

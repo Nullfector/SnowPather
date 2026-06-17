@@ -1,0 +1,33 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="projekt_bazy.Views.GraphPanelView">
+	<StackPanel Margin="32" Spacing="16">
+
+		<TextBlock Text="Panel miasta"
+                   FontSize="24" />
+
+		<TextBlock x:Name="GraphNameTextBlock"
+                   FontSize="16" />
+
+		<Button Content="Pokaż wizualizację mapy miasta"
+        Width="220"
+        Click="ShowVisualizerButton_Click" />
+
+		<Button Content="Szukaj ścieżki"
+        Width="220"
+        Click="PathFindingButton_Click" />
+
+		<Button Content="Usuń to miasto"
+                Width="220"
+                Click="DeleteGraphButton_Click" />
+
+		<Button Content="Powrót do ekranu głównego"
+                Width="220"
+                Click="BackButton_Click" />
+
+		<TextBlock x:Name="StatusTextBlock"
+                   TextWrapping="Wrap" />
+
+
+	</StackPanel>
+</UserControl>

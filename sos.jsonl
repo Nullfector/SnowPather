@@ -1,0 +1,99 @@
+{"type": "node", "label": ["JUNCTION", "START"], "name": "estakada"}
+{"type": "node", "label": ["JUNCTION", "START"], "name": "rondo_kobiet"}
+{"type": "node", "label": ["JUNCTION"], "name": "rondo_cwierka"}
+{"type": "node", "label": ["UTURN"], "name": "deblinska_end"}
+{"type": "node", "label": ["JUNCTION"], "name": "koltaj-sadowa"}
+{"type": "node", "label": ["JUNCTION"], "name": "czysta-krzywa"}
+{"type": "node", "label": ["JUNCTION"], "name": "krzywa-koltaja"}
+{"type": "node", "label": ["JUNCTION", "IMPORTANT_PLACE"], "name": "teatr"}
+{"type": "node", "label": ["UTURN"], "name": "teatralna_end"}
+{"type": "node", "label": ["JUNCTION"], "name": "pilsudski-sienkiewicz"}
+{"type": "node", "label": ["JUNCTION"], "name": "krzywa-pilsudski"}
+{"type": "node", "label": ["JUNCTION", "IMPORTANT_PLACE"], "name": "galeria"}
+{"type": "node", "label": ["UTURN"], "name": "warszawska_end"}
+{"type": "node", "label": ["JUNCTION"], "name": "szklarniana_targowa"}
+{"type": "node", "label": ["JUNCTION"], "name": "3maja-malachowskiego"}
+{"type": "node", "label": ["JUNCTION"], "name": "3maja-smigielskiego"}
+{"type": "node", "label": ["JUNCTION"], "name": "zwycienstwa_2"}
+{"type": "node", "label": ["JUNCTION"], "name": "zwycienstwa_1"}
+{"type": "node", "label": ["JUNCTION","IMPORTANT_PLACE"], "name": "urzad"}
+{"type": "node", "label": ["JUNCTION"], "name": "malachowskiego-moscickiego"}
+{"type": "node", "label": ["JUNCTION"], "name": "moscickiego-urbanowicz"}
+{"type": "node", "label": ["JUNCTION"], "name": "warenczyka-urbanowicz"}
+{"type": "node", "label": ["UTURN"], "name": "warenczyka_end"}
+{"type": "node", "label": ["JUNCTION"], "name": "warenczyka-malachowskiego"}
+{"type": "node", "label": ["JUNCTION"], "name": "malachowksiego-zurawia"}
+{"type": "node", "label": ["JUNCTION"], "name": "zurawia-urbanowicz"}
+{"type": "node", "label": ["JUNCTION"], "name": "urbanowicz-chlodna"}
+{"type": "node", "label": ["UTURN"], "name": "chlodna_end"}
+{"type": "node", "label": ["UTURN"], "name": "urbanowicz_end"}
+{"type": "node", "label": ["JUNCTION", "START"], "name": "rondo_1maja"}
+{"type": "node", "label": ["JUNCTION"], "name": "ostrogorska-pileckiego"}
+{"type": "node", "label": ["UTURN"], "name": "ostrogorska_end"}
+{"type": "node", "label": ["JUNCTION"], "name": "koscielna-zegadlowa"}
+{"type": "node", "label": ["UTURN","IMPORTANT_PLACE"], "name": "szpital"}
+{"type": "node", "label": ["UTURN"], "name": "koscielna_end"}
+{"type": "node", "label": ["JUNCTION"], "name": "sienkiewicza-wspolna"}
+{"type": "node", "label": ["JUNCTION"], "name": "sienkiewicza-dekerta"}
+{"type": "node", "label": ["JUNCTION"], "name": "sienkiewicza-koscielna"}
+{"type": "node", "label": ["JUNCTION"], "name": "pileckiego-sienkiewicza"}
+{"type": "node", "label": ["JUNCTION"], "name": "sienkiewicza-wyszynskiego"}
+{"type": "node", "label": ["UTURN"], "name": "wyszynskiego_end"}
+{"type": "edge", "label": "ONE_WAY", "name": "3maja_full", "length": 1300, "maxspeed": 50, "priority": 1, "from": "estakada", "to":"rondo_kobiet"}
+{"type": "edge", "label": "ONE_WAY", "name": "3maja_3-19", "length": 600, "maxspeed": 50, "priority": 1, "from": "rondo_kobiet", "to":"3maja-malachowskiego"}
+{"type": "edge", "label": "ONE_WAY", "name": "3maja_25-31", "length": 250, "maxspeed": 50, "priority": 1, "from": "3maja-malachowskiego", "to":"3maja-smigielskiego"}
+{"type": "edge", "label": "TWO_WAY", "name": "moscickiego_liceum", "length": 350, "maxspeed": 50, "priority": 1, "from": "estakada", "to":"urzad"}
+{"type": "edge", "label": "ONE_WAY", "name": "3maja_estakada", "length": 100, "maxspeed": 50, "priority": 1, "from": "3maja-smigielskiego", "to":"estakada"}
+{"type": "edge", "label": "ONE_WAY", "name": "zwycienstwa_12-20", "length": 130, "maxspeed": 30, "priority": 3, "from": "urzad", "to":"zwycienstwa_1"}
+{"type": "edge", "label": "ONE_WAY", "name": "zwycienstwa_8-11", "length": 80, "maxspeed": 20, "priority": 3, "from": "zwycienstwa_1", "to":"zwycienstwa_2"}
+{"type": "edge", "label": "TWO_WAY", "name": "smigielskiego", "length": 170, "maxspeed": 30, "priority": 2, "from": "zwycienstwa_2", "to":"3maja-smigielskiego"}
+{"type": "edge", "label": "ONE_WAY", "name": "zwycienstwa_loop", "length": 300, "maxspeed": 20, "priority": 3, "from": "zwycienstwa_2", "to":"zwycienstwa_2"}
+{"type": "edge", "label": "ONE_WAY", "name": "zwycienstwa_15-21", "length": 80, "maxspeed": 20, "priority": 3, "from": "zwycienstwa_2", "to":"zwycienstwa_1"}
+{"type": "edge", "label": "TWO_WAY", "name": "moscickiego_14", "length": 70, "maxspeed": 50, "priority": 1, "from": "urzad", "to":"moscickiego-urbanowicz"}
+{"type": "edge", "label": "ONE_WAY", "name": "targowa", "length": 470, "maxspeed": 30, "priority": 2, "from": "szklarniana_targowa", "to":"3maja-malachowskiego"}
+{"type": "edge", "label": "TWO_WAY", "name": "warszawska", "length": 330, "maxspeed": 20, "priority": 3, "from": "galeria", "to":"warszawska_end"}
+{"type": "edge", "label": "TWO_WAY", "name": "szklarniana_3", "length": 140, "maxspeed": 40, "priority": 3, "from": "galeria", "to":"szklarniana_targowa"}
+{"type": "edge", "label": "TWO_WAY", "name": "warszawska_galeria", "length": 120, "maxspeed": 40, "priority": 2, "from": "pilsudski-sienkiewicz", "to":"galeria"}
+{"type": "edge", "label": "ONE_WAY", "name": "dekerta", "length": 210, "maxspeed": 30, "priority": 2, "from": "sienkiewicza-dekerta", "to":"szklarniana_targowa"}
+{"type": "edge", "label": "ONE_WAY", "name": "deblinska", "length": 220, "maxspeed": 30, "priority": 3, "from": "rondo_kobiet", "to":"rondo_cwierka"}
+{"type": "edge", "label": "ONE_WAY", "name": "koltej_rondo", "length": 60, "maxspeed": 30, "priority": 2, "from": "koltaj-sadowa", "to":"rondo_cwierka"}
+{"type": "edge", "label": "TWO_WAY", "name": "deblinska_kolej", "length": 90, "maxspeed": 30, "priority": 3, "from": "rondo_cwierka", "to":"deblinska_end"}
+{"type": "edge", "label": "ONE_WAY", "name": "sadowa_czysta", "length": 230, "maxspeed": 30, "priority": 2, "from": "koltaj-sadowa", "to":"czysta-krzywa"}
+{"type": "edge", "label": "ONE_WAY", "name": "koltaja_8-12", "length": 130, "maxspeed": 30, "priority": 2, "from": "krzywa-koltaja", "to":"koltaj-sadowa"}
+{"type": "edge", "label": "TWO_WAY", "name": "krzywa_9-10", "length": 80, "maxspeed": 30, "priority": 2, "from": "krzywa-koltaja", "to":"czysta-krzywa"}
+{"type": "edge", "label": "TWO_WAY", "name": "krzywa_1", "length": 80, "maxspeed": 30, "priority": 2, "from": "czysta-krzywa", "to":"krzywa-pilsudski"}
+{"type": "edge", "label": "TWO_WAY", "name": "koltaja_budowa", "length": 100, "maxspeed": 40, "priority": 2, "from": "krzywa-koltaja", "to":"teatr"}
+{"type": "edge", "label": "TWO_WAY", "name": "teatralna_teatr", "length": 160, "maxspeed": 40, "priority": 2, "from": "pilsudski-sienkiewicz", "to":"teatr"}
+{"type": "edge", "label": "TWO_WAY", "name": "teatralna_szkola", "length": 130, "maxspeed": 40, "priority": 2, "from": "teatr", "to":"teatralna_end"}
+{"type": "edge", "label": "TWO_WAY", "name": "wspolna_full", "length": 360, "maxspeed": 40, "priority": 2, "from": "sienkiewicza-wspolna", "to":"koscielna-zegadlowa"}
+{"type": "edge", "label": "TWO_WAY", "name": "koscielna_szkola", "length": 310, "maxspeed": 40, "priority": 2, "from": "sienkiewicza-koscielna", "to":"koscielna-zegadlowa"}
+{"type": "edge", "label": "TWO_WAY", "name": "koscielna_market", "length": 120, "maxspeed": 40, "priority": 2, "from": "koscielna-zegadlowa", "to":"koscielna_end"}
+{"type": "edge", "label": "TWO_WAY", "name": "koscielna_szpital", "length": 320, "maxspeed": 40, "priority": 2, "from": "koscielna-zegadlowa", "to":"szpital"}
+{"type": "edge", "label": "TWO_WAY", "name": "pileckiego_full", "length": 350, "maxspeed": 20, "priority": 3, "from": "ostrogorska-pileckiego", "to":"pileckiego-sienkiewicza"}
+{"type": "edge", "label": "TWO_WAY", "name": "ostrogorska_rondo", "length": 60, "maxspeed": 40, "priority": 2, "from": "ostrogorska_rondo", "to":"rondo_1maja"}
+{"type": "edge", "label": "TWO_WAY", "name": "ostrogrodzka_osiedle", "length": 80, "maxspeed": 40, "priority": 3, "from": "ostrogorska_rondo", "to":"ostrogorska_end"}
+{"type": "edge", "label": "TWO_WAY", "name": "wyszynskiego_full", "length": 150, "maxspeed": 20, "priority": 3, "from": "sienkiewicza-wyszynskiego", "to":"wyszynskiego_end"}
+{"type": "edge", "label": "TWO_WAY", "name": "malachwskiego_rondo", "length": 150, "maxspeed": 50, "priority": 1, "from": "rondo_1maja", "to":"malachowksiego-zurawia"}
+{"type": "edge", "label": "TWO_WAY", "name": "malachowskiego_fontanna", "length": 60, "maxspeed": 40, "priority": 1, "from": "malachowksiego-zurawia", "to":"warenczyka-malachowskiego"}
+{"type": "edge", "label": "TWO_WAY", "name": "malachowskiego_kino", "length": 120, "maxspeed": 40, "priority": 1, "from": "warenczyka-malachowskiego", "to":"malachowskiego-moscickiego"}
+{"type": "edge", "label": "TWO_WAY", "name": "moscickiego_szkola", "length": 170, "maxspeed": 40, "priority": 1, "from": "malachowskiego-moscickiego", "to":"moscickiego-urbanowicz"}
+{"type": "edge", "label": "TWO_WAY", "name": "urbanowicz_szkola", "length": 210, "maxspeed": 40, "priority": 2, "from": "moscickiego-urbanowicz", "to":"warenczyka-urbanowicz"}
+{"type": "edge", "label": "TWO_WAY", "name": "warenczyka_22-28", "length": 140, "maxspeed": 40, "priority": 3, "from": "warenczyka-urbanowicz", "to":"warenczyka_end"}
+{"type": "edge", "label": "TWO_WAY", "name": "urbanowicz_13", "length": 60, "maxspeed": 30, "priority": 2, "from": "warenczyka-urbanowicz", "to":"zurawia-urbanowicz"}
+{"type": "edge", "label": "TWO_WAY", "name": "urbanowicz_parkingi", "length": 90, "maxspeed": 30, "priority": 3, "from": "zurawia-urbanowicz", "to":"urbanowicz-chlodna"}
+{"type": "edge", "label": "TWO_WAY", "name": "chlodna_full", "length": 160, "maxspeed": 20, "priority": 3, "from": "urbanowicz-chlodna", "to":"chlodna_end"}
+{"type": "edge", "label": "TWO_WAY", "name": "urbanowicz_osiedle", "length": 120, "maxspeed": 20, "priority": 3, "from": "urbanowicz-chlodna", "to":"urbanowicz_end"}
+{"type": "edge", "label": "TWO_WAY", "name": "zurawia_full", "length": 180, "maxspeed": 30, "priority": 3, "from": "zurawia-urbanowicz", "to":"malachowksiego-zurawia"}
+{"type": "edge", "label": "ONE_WAY", "name": "warenczyka_2-12", "length": 190, "maxspeed": 40, "priority": 2, "from": "warenczyka-urbanowicz", "to":"warenczyka-malachowskiego"}
+{"type": "edge", "label": "ONE_WAY", "name": "koscielna_kosciol", "length": 250, "maxspeed": 20, "priority": 2, "from": "sienkiewicza-koscielna", "to":"malachowskiego-moscickiego"}
+{"type": "edge", "label": "ONE_WAY", "name": "sienkiewicza_16-28", "length": 160, "maxspeed": 50, "priority": 1, "from": "rondo_1maja", "to":"sienkiewicza-wyszynskiego"}
+{"type": "edge", "label": "ONE_WAY", "name": "sienkiewicza_kosciol", "length": 130, "maxspeed": 50, "priority": 1, "from": "sienkiewicza-wyszynskiego", "to":"sienkiewicza-koscielna"}
+{"type": "edge", "label": "ONE_WAY", "name": "sienkiewicza_cygan", "length": 120, "maxspeed": 50, "priority": 1, "from": "sienkiewicza-koscielna", "to":"sienkiewicza-dekerta"}
+{"type": "edge", "label": "ONE_WAY", "name": "sienkiewicza_galeria", "length": 160, "maxspeed": 50, "priority": 1, "from": "sienkiewicza-dekerta", "to":"pilsudski-sienkiewicz"}
+{"type": "edge", "label": "ONE_WAY", "name": "pilsudskiego_3-7", "length": 260, "maxspeed": 50, "priority": 1, "from": "pilsudski-sienkiewicz", "to":"rondo_kobiet"}
+{"type": "edge", "label": "ONE_WAY", "name": "pilsudskiego_6-16", "length": 220, "maxspeed": 50, "priority": 1, "from": "rondo_kobiet", "to":"krzywa-pilsudski"}
+{"type": "edge", "label": "ONE_WAY", "name": "pilsudskiego_policja", "length": 50, "maxspeed": 50, "priority": 1, "from": "krzywa-pilsudski", "to":"pilsudski-sienkiewicz"}
+{"type": "edge", "label": "ONE_WAY", "name": "sienkiewicz_stacja_paliw", "length": 160, "maxspeed": 50, "priority": 1, "from": "pilsudski-sienkiewicz", "to":"sienkiewicza-wspolna"}
+{"type": "edge", "label": "ONE_WAY", "name": "sienkiewicza_9-18", "length": 120, "maxspeed": 50, "priority": 1, "from": "sienkiewicza-wspolna", "to":"sienkiewicza-koscielna"}
+{"type": "edge", "label": "ONE_WAY", "name": "sienkiewicza_3-25", "length": 130, "maxspeed": 50, "priority": 1, "from": "sienkiewicza-koscielna", "to":"pileckiego-sienkiewicza"}
+{"type": "edge", "label": "ONE_WAY", "name": "sienkiewicza_27-39", "length": 160, "maxspeed": 50, "priority": 1, "from": "pileckiego-sienkiewicza", "to":"rondo_1maja"}

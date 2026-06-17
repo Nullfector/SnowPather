@@ -1,0 +1,6 @@
+{"type": "node", "label": ["JUNCTION"], "name": "aaa"}
+{"type": "node", "label": ["JUNCTION", "IMPORTANT_PLACE"], "name": "bbb"}
+{"type": "node", "label": ["JUNCTION", "START"], "name": "ccc"}
+{"type": "edge", "label": "TWO_WAY", "name": "a-c", "length": 9, "maxspeed": 10, "priority": 1, "from": "aaa", "to":"ccc"}
+{"type": "edge", "label": "ONE_WAY", "name": "a-b", "length": 7, "maxspeed": 10, "priority": 2, "from": "aaa", "to":"bbb"}
+{"type": "edge", "label": "ONE_WAY", "name": "b-c", "length": 1, "maxspeed": 20, "priority": 2, "from": "bbb", "to":"ccc"}

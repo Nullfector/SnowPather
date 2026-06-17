@@ -1,0 +1,41 @@
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: neo4j/test12345678
+      NEO4J_PLUGINS: '["graph-data-science"]'
+      NEO4J_dbms_security_procedures_unrestricted: gds.*
+      NEO4J_dbms_security_procedures_allowlist: gds.*
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - neo4j_plugins:/plugins
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u neo4j -p test12345678 'RETURN 1'"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  neo4j-init:
+    image: neo4j:latest
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    volumes:
+      - ./init.cypher:/init.cypher:ro
+    command: >
+      cypher-shell
+      -a bolt://neo4j:7687
+      -u neo4j
+      -p test12345678
+      -f /init.cypher
+    restart: "no"
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
+  neo4j_plugins:

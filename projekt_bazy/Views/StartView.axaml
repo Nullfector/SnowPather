@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="projekt_bazy.Views.StartView">
+
+	<StackPanel Margin="32"
+                Spacing="16"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+
+		<TextBlock Text="System planowania trasy odśnieżarek"
+                   FontSize="26"
+                   HorizontalAlignment="Center"/>
+
+		<TextBlock Text="Połącz z zapisanym w bazie miastem:" />
+
+		<AutoCompleteBox x:Name="GraphNameTextBox"
+                 Width="250"
+                 PlaceholderText="Nazwa miasta"
+                 FilterMode="Contains" />
+
+		<Button Content="Dalej"
+                Width="200"
+                Click="ConnectGraphButton_Click" />
+
+		<Separator Margin="0,12,0,12" />
+
+		<Button Content="Stwórz nowy zapis miasta"
+                Width="200"
+                Click="CreateNewGraphButton_Click" />
+
+		<TextBlock x:Name="StatusTextBlock"
+                   TextWrapping="Wrap"
+                   Width="400" />
+
+	</StackPanel>
+</UserControl>

@@ -1,0 +1,43 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="projekt_bazy.Views.CreateGraphView">
+
+	<StackPanel Margin="24" Spacing="12">
+
+		<TextBlock Text="Tworzenie nowego miasta"
+                   FontSize="24" />
+
+		<TextBlock Text="Nazwa miasta:" />
+
+		<TextBox x:Name="GraphNameTextBox"
+                 Watermark="np. Warszawa" />
+
+		<TextBlock Text="Plik JSONL:" />
+
+		<StackPanel Orientation="Horizontal" Spacing="8">
+			<TextBox x:Name="FilePathTextBox"
+                     IsReadOnly="True"
+                     Width="420"
+                     Watermark="Nie wybrano pliku" />
+
+			<Button Content="Wybierz plik"
+                    Click="ChooseFileButton_Click" />
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" Spacing="8">
+			<Button x:Name="ImportButton"
+                    Content="Importuj"
+                    Width="180"
+                    Click="ImportButton_Click" />
+
+			<Button Content="Powrót"
+                    Width="120"
+                    Click="BackButton_Click" />
+		</StackPanel>
+
+		<TextBlock x:Name="StatusTextBlock"
+                   Text="Gotowe."
+                   TextWrapping="Wrap" />
+
+	</StackPanel>
+</UserControl>
