@@ -126,7 +126,7 @@ Poniżej znajduje się czytelny opis każdego z ekranów aplikacji:
 
  4) Ekran wizualizacji
 
-	![ekran](graf-ika/vizu.png)
+	![ekran](graf-ika/wizu.png)
 
 	Wizualizacja ładuje się domyślnie podczas otwarcia ekranu z limitem 25. Można ten limit zmienić i po kliknięciu przycisku "Odśwież" widok załaduje się na nowo. Przy próbie wpisania wartości niebędącej liczbą większą lub równą od 0 otrzyma się: dla wartości negatywnych lub ułamków - błąd wyświetlenia, a dla wartości tekstowych - wyświetlona zostanie wizualizacja dla 25.
 
