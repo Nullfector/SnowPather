@@ -94,7 +94,8 @@ Jego działanie jest następujące:
  8) Powrót do punktu 3
  
 Bardziej czytelny opis tego algorytmu znajduje się na grafice poniżej:
-[grafika]
+
+![grafika](graf-ika/diag.png)
 
 # 6. Opis interfejsu użytkownika
 Poniżej znajduje się czytelny opis każdego z ekranów aplikacji:
